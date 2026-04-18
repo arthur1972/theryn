@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theryn Travel | Your Affiliate Travel Guide</title>
+  <meta name="description" content="Discover amazing destinations and exclusive travel deals. Book through our trusted affiliate partners and find programs you can join yourself." />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAVIGATION ═══════════════════════════ -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Theryn<span>Travel</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#book">Book Travel</a></li>
+        <li><a href="#affiliate-programs">Earn Too</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn btn--nav">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section id="home" class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Your Personal Tour Guide &amp; Travel Expert</p>
+        <h1 class="hero__title">Explore the World.<br>Book Smarter.</h1>
+        <p class="hero__subtitle">I curate handpicked destinations and connect you directly to the best travel deals through trusted partners — so you can focus on the adventure.</p>
+        <div class="hero__cta">
+          <a href="#destinations" class="btn btn--primary">Browse Destinations</a>
+          <a href="#book" class="btn btn--outline">Book Now</a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ INTRO STRIP ═══════════════════════════ -->
+    <section class="intro-strip">
+      <div class="container intro-strip__grid">
+        <div class="intro-strip__item">
+          <span class="intro-strip__icon">🌍</span>
+          <strong>50+ Destinations</strong>
+          <p>Personally visited and reviewed</p>
+        </div>
+        <div class="intro-strip__item">
+          <span class="intro-strip__icon">🤝</span>
+          <strong>Trusted Partners</strong>
+          <p>Expedia, Hotels.com, Booking.com &amp; more</p>
+        </div>
+        <div class="intro-strip__item">
+          <span class="intro-strip__icon">💸</span>
+          <strong>Earn While You Travel</strong>
+          <p>Join affiliate programs &amp; earn commissions</p>
+        </div>
+        <div class="intro-strip__item">
+          <span class="intro-strip__icon">📸</span>
+          <strong>Real Photos</strong>
+          <p>Every photo taken on location by me</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ DESTINATIONS GALLERY ═══════════════════════════ -->
+    <section id="destinations" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Where to Next?</p>
+          <h2 class="section-title">Destinations &amp; Tours</h2>
+          <p class="section-subtitle">Click any destination to explore and book through my affiliate partner — you pay nothing extra and it supports this site.</p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="beach">Beach</button>
+          <button class="filter-btn" data-filter="city">City</button>
+          <button class="filter-btn" data-filter="adventure">Adventure</button>
+          <button class="filter-btn" data-filter="culture">Culture</button>
+        </div>
+
+        <div class="gallery">
+
+          <article class="card" data-category="beach">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Tropical beach with turquoise water" loading="lazy" />
+              <span class="card__badge">Beach</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Maldives</h3>
+              <p class="card__text">Crystal-clear lagoons, overwater bungalows, and world-class snorkeling. A dream destination made affordable.</p>
+              <a href="https://www.expedia.com/Maldives.d6048473.Destination-Travel-Guides" target="_blank" rel="noopener sponsored" class="card__link btn btn--secondary">
+                Book on Expedia →
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="city">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80" alt="New York City skyline at night" loading="lazy" />
+              <span class="card__badge">City</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">New York City</h3>
+              <p class="card__text">Broadway shows, iconic skylines, and food from every corner of the world. The city that never sleeps delivers on every visit.</p>
+              <a href="https://www.expedia.com/New-York.d178293.Destination-Travel-Guides" target="_blank" rel="noopener sponsored" class="card__link btn btn--secondary">
+                Book on Expedia →
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="adventure">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mountain hiking trail in Alps" loading="lazy" />
+              <span class="card__badge">Adventure</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Swiss Alps</h3>
+              <p class="card__text">From beginner trails to expert climbs, the Alps offer stunning vistas at every elevation. Best booked early for peak season.</p>
+              <a href="https://www.booking.com/region/ch/the-alps.html" target="_blank" rel="noopener sponsored" class="card__link btn btn--secondary">
+                Book on Booking.com →
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="culture">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Kyoto temple with cherry blossoms" loading="lazy" />
+              <span class="card__badge">Culture</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Kyoto, Japan</h3>
+              <p class="card__text">Ancient temples, geisha districts, and cherry-blossom parks. Kyoto is a living museum of traditional Japanese culture.</p>
+              <a href="https://www.expedia.com/Kyoto.d179896.Destination-Travel-Guides" target="_blank" rel="noopener sponsored" class="card__link btn btn--secondary">
+                Book on Expedia →
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="beach">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=600&q=80" alt="Bali rice terraces and beach" loading="lazy" />
+              <span class="card__badge">Beach</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Bali, Indonesia</h3>
+              <p class="card__text">Surf breaks, rice terraces, sacred temples, and a vibrant food scene — all at a fraction of Caribbean prices.</p>
+              <a href="https://www.hotels.com/de1492873/hotels-bali-indonesia/" target="_blank" rel="noopener sponsored" class="card__link btn btn--secondary">
+                Book on Hotels.com →
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="city">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="Paris Eiffel Tower at sunset" loading="lazy" />
+              <span class="card__badge">City</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Paris, France</h3>
+              <p class="card__text">The Eiffel Tower, world-class cuisine, fashion, and art. Every corner of Paris feels like a postcard waiting to be sent.</p>
+              <a href="https://www.expedia.com/Paris.d179141.Destination-Travel-Guides" target="_blank" rel="noopener sponsored" class="card__link btn btn--secondary">
+                Book on Expedia →
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="adventure">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&q=80" alt="Safari in African savanna" loading="lazy" />
+              <span class="card__badge">Adventure</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Serengeti Safari</h3>
+              <p class="card__text">Witness the Great Migration and encounter the Big Five up close. An experience that will stay with you for a lifetime.</p>
+              <a href="https://www.booking.com/region/tz/serengeti.html" target="_blank" rel="noopener sponsored" class="card__link btn btn--secondary">
+                Book on Booking.com →
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="culture">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=600&q=80" alt="Machu Picchu ancient ruins Peru" loading="lazy" />
+              <span class="card__badge">Culture</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Machu Picchu, Peru</h3>
+              <p class="card__text">A UNESCO World Heritage Site perched high in the Andes. The Inca citadel is one of the most breathtaking sights on Earth.</p>
+              <a href="https://www.expedia.com/Machu-Picchu.d6049474.Destination-Travel-Guides" target="_blank" rel="noopener sponsored" class="card__link btn btn--secondary">
+                Book on Expedia →
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.gallery -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ BOOK TRAVEL ═══════════════════════════ -->
+    <section id="book" class="section section--dark">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <p class="section-eyebrow">Save on Every Trip</p>
+          <h2 class="section-title">Book Through My Partners</h2>
+          <p class="section-subtitle">I'm affiliated with the world's leading travel booking platforms. Click through to get the best available rates — at no extra cost to you.</p>
+        </div>
+        <div class="partners-grid">
+
+          <a href="https://www.expedia.com" target="_blank" rel="noopener sponsored" class="partner-card">
+            <div class="partner-card__logo">✈️</div>
+            <h3>Expedia</h3>
+            <p>Flights, hotels, car rentals &amp; vacation packages all in one place. Best price guarantee on millions of properties.</p>
+            <span class="btn btn--primary">Book on Expedia</span>
+          </a>
+
+          <a href="https://www.hotels.com" target="_blank" rel="noopener sponsored" class="partner-card">
+            <div class="partner-card__logo">🏨</div>
+            <h3>Hotels.com</h3>
+            <p>Earn a free night for every 10 nights you book. Hundreds of thousands of hotels worldwide at competitive prices.</p>
+            <span class="btn btn--primary">Find Hotels</span>
+          </a>
+
+          <a href="https://www.booking.com" target="_blank" rel="noopener sponsored" class="partner-card">
+            <div class="partner-card__logo">🌐</div>
+            <h3>Booking.com</h3>
+            <p>Hotels, apartments, villas, hostels and more. Free cancellation on most properties — flexible travel made easy.</p>
+            <span class="btn btn--primary">Browse Booking.com</span>
+          </a>
+
+          <a href="https://www.viator.com" target="_blank" rel="noopener sponsored" class="partner-card">
+            <div class="partner-card__logo">🎟️</div>
+            <h3>Viator Tours</h3>
+            <p>Local tours, activities, and experiences curated by experts. Skip-the-line tickets and guided tours in 2,500+ destinations.</p>
+            <span class="btn btn--primary">Find Experiences</span>
+          </a>
+
+          <a href="https://www.rentalcars.com" target="_blank" rel="noopener sponsored" class="partner-card">
+            <div class="partner-card__logo">🚗</div>
+            <h3>Rental Cars</h3>
+            <p>Compare car rental prices from all major providers globally. Free cancellations &amp; no hidden fees.</p>
+            <span class="btn btn--primary">Compare Cars</span>
+          </a>
+
+          <a href="https://www.worldnomads.com" target="_blank" rel="noopener sponsored" class="partner-card">
+            <div class="partner-card__logo">🛡️</div>
+            <h3>World Nomads</h3>
+            <p>Travel insurance designed for adventurous travelers. Coverage for 150+ activities in 150+ countries.</p>
+            <span class="btn btn--primary">Get Insured</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ AFFILIATE PROGRAMS DIRECTORY ═══════════════════════════ -->
+    <section id="affiliate-programs" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Make Money While You Travel</p>
+          <h2 class="section-title">Affiliate Programs You Can Join</h2>
+          <p class="section-subtitle">Love travel? You can earn commissions by recommending these programs to others. Click any card to learn more and apply for free.</p>
+        </div>
+        <div class="programs-grid">
+
+          <div class="program-card">
+            <div class="program-card__header">
+              <span class="program-card__icon">✈️</span>
+              <div>
+                <h3>Expedia Affiliate Program</h3>
+                <span class="program-card__tag">Travel Booking</span>
+              </div>
+            </div>
+            <ul class="program-card__details">
+              <li><strong>Commission:</strong> Up to 6% per booking</li>
+              <li><strong>Cookie:</strong> 7 days</li>
+              <li><strong>Network:</strong> Commission Junction (CJ)</li>
+            </ul>
+            <a href="https://www.expedia.com/affiliate" target="_blank" rel="noopener" class="btn btn--outline-dark">Apply Now →</a>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card__header">
+              <span class="program-card__icon">🌐</span>
+              <div>
+                <h3>Booking.com Affiliate</h3>
+                <span class="program-card__tag">Hotels &amp; Stays</span>
+              </div>
+            </div>
+            <ul class="program-card__details">
+              <li><strong>Commission:</strong> 25–40% of Booking.com's margin</li>
+              <li><strong>Cookie:</strong> Session-based</li>
+              <li><strong>Network:</strong> In-house</li>
+            </ul>
+            <a href="https://www.booking.com/affiliate-program" target="_blank" rel="noopener" class="btn btn--outline-dark">Apply Now →</a>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card__header">
+              <span class="program-card__icon">🎟️</span>
+              <div>
+                <h3>Viator Partner Program</h3>
+                <span class="program-card__tag">Tours &amp; Activities</span>
+              </div>
+            </div>
+            <ul class="program-card__details">
+              <li><strong>Commission:</strong> 8% per booking</li>
+              <li><strong>Cookie:</strong> 30 days</li>
+              <li><strong>Network:</strong> Impact Radius</li>
+            </ul>
+            <a href="https://www.viator.com/info/affiliates" target="_blank" rel="noopener" class="btn btn--outline-dark">Apply Now →</a>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card__header">
+              <span class="program-card__icon">🛡️</span>
+              <div>
+                <h3>World Nomads Affiliate</h3>
+                <span class="program-card__tag">Travel Insurance</span>
+              </div>
+            </div>
+            <ul class="program-card__details">
+              <li><strong>Commission:</strong> 10% per policy</li>
+              <li><strong>Cookie:</strong> 60 days</li>
+              <li><strong>Network:</strong> Commission Factory</li>
+            </ul>
+            <a href="https://www.worldnomads.com/affiliate" target="_blank" rel="noopener" class="btn btn--outline-dark">Apply Now →</a>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card__header">
+              <span class="program-card__icon">🎒</span>
+              <div>
+                <h3>Amazon Associates</h3>
+                <span class="program-card__tag">Travel Gear</span>
+              </div>
+            </div>
+            <ul class="program-card__details">
+              <li><strong>Commission:</strong> 1–10% by category</li>
+              <li><strong>Cookie:</strong> 24 hours</li>
+              <li><strong>Network:</strong> Amazon In-house</li>
+            </ul>
+            <a href="https://affiliate-program.amazon.com" target="_blank" rel="noopener" class="btn btn--outline-dark">Apply Now →</a>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card__header">
+              <span class="program-card__icon">🚗</span>
+              <div>
+                <h3>Discover Cars Affiliate</h3>
+                <span class="program-card__tag">Car Rentals</span>
+              </div>
+            </div>
+            <ul class="program-card__details">
+              <li><strong>Commission:</strong> 70% of profits</li>
+              <li><strong>Cookie:</strong> 365 days</li>
+              <li><strong>Network:</strong> In-house</li>
+            </ul>
+            <a href="https://www.discovercars.com/affiliate" target="_blank" rel="noopener" class="btn btn--outline-dark">Apply Now →</a>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card__header">
+              <span class="program-card__icon">🏕️</span>
+              <div>
+                <h3>GetYourGuide Partner</h3>
+                <span class="program-card__tag">Experiences</span>
+              </div>
+            </div>
+            <ul class="program-card__details">
+              <li><strong>Commission:</strong> 8% per activity</li>
+              <li><strong>Cookie:</strong> 31 days</li>
+              <li><strong>Network:</strong> Impact Radius</li>
+            </ul>
+            <a href="https://partner.getyourguide.com" target="_blank" rel="noopener" class="btn btn--outline-dark">Apply Now →</a>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card__header">
+              <span class="program-card__icon">📱</span>
+              <div>
+                <h3>TripAdvisor Affiliate</h3>
+                <span class="program-card__tag">Reviews &amp; Booking</span>
+              </div>
+            </div>
+            <ul class="program-card__details">
+              <li><strong>Commission:</strong> 50% of TripAdvisor revenue</li>
+              <li><strong>Cookie:</strong> 14 days</li>
+              <li><strong>Network:</strong> Commission Junction</li>
+            </ul>
+            <a href="https://www.tripadvisor.com/Affiliates" target="_blank" rel="noopener" class="btn btn--outline-dark">Apply Now →</a>
+          </div>
+
+        </div><!-- /.programs-grid -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+    <section id="about" class="section section--tinted">
+      <div class="container about-grid">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=600&q=80" alt="Travel guide exploring a destination" loading="lazy" />
+          <div class="about-img-badge">
+            <strong>10+</strong>
+            <span>Years<br>Traveling</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="section-eyebrow">Nice to Meet You</p>
+          <h2 class="section-title">I'm Theryn — Your Travel Guide &amp; Affiliate Marketer</h2>
+          <p>I've spent over a decade exploring destinations across six continents, capturing every moment through my camera lens and sharing those adventures with my community.</p>
+          <p>What makes this site different? Every destination you see here I've personally visited. Every affiliate partner I recommend is one I've used and trust. My goal is simple: help you travel smarter, spend less, and experience more.</p>
+          <p>I'm also passionate about helping other travel lovers earn money from their passion. The <a href="#affiliate-programs">Affiliate Programs</a> section lists legitimate programs you can apply to — many of which I use myself.</p>
+          <div class="about-stats">
+            <div class="about-stat">
+              <strong>50+</strong>
+              <span>Countries Visited</span>
+            </div>
+            <div class="about-stat">
+              <strong>200+</strong>
+              <span>Tours Guided</span>
+            </div>
+            <div class="about-stat">
+              <strong>10K+</strong>
+              <span>Happy Travelers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACT / NEWSLETTER ═══════════════════════════ -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <p class="section-eyebrow">Stay Connected</p>
+          <h2 class="section-title">Get Travel Tips &amp; Deals in Your Inbox</h2>
+          <p>Join thousands of subscribers who get my best destination guides, exclusive affiliate deals, and money-saving travel hacks — delivered weekly, for free.</p>
+          <ul class="contact-list">
+            <li>✅ Weekly destination spotlights</li>
+            <li>✅ Exclusive promo codes from partners</li>
+            <li>✅ New affiliate program alerts</li>
+            <li>✅ Itinerary templates you can download</li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form id="newsletter-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="interest">I'm most interested in…</label>
+              <select id="interest" name="interest">
+                <option value="">Select an option</option>
+                <option value="beach">Beach &amp; Island Destinations</option>
+                <option value="city">City Breaks</option>
+                <option value="adventure">Adventure &amp; Outdoors</option>
+                <option value="culture">Culture &amp; History</option>
+                <option value="earn">Earning as an Affiliate</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Subscribe Free →</button>
+            <p class="form-note">No spam, ever. Unsubscribe any time. By subscribing you agree to our privacy policy.</p>
+          </form>
+          <div id="form-success" class="form-success" hidden>
+            <span class="form-success__icon">🎉</span>
+            <h3>You're in!</h3>
+            <p>Thanks for subscribing. Check your inbox for a welcome email with your first travel tip.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav__logo">Theryn<span>Travel</span></a>
+        <p>Connecting adventurous travelers to the world's best destinations and deals since 2015.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+          <a href="#" aria-label="Pinterest">📌</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#book">Book Travel</a></li>
+          <li><a href="#affiliate-programs">Affiliate Programs</a></li>
+          <li><a href="#about">About Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="https://www.expedia.com" target="_blank" rel="noopener sponsored">Expedia</a></li>
+          <li><a href="https://www.hotels.com" target="_blank" rel="noopener sponsored">Hotels.com</a></li>
+          <li><a href="https://www.booking.com" target="_blank" rel="noopener sponsored">Booking.com</a></li>
+          <li><a href="https://www.viator.com" target="_blank" rel="noopener sponsored">Viator</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#affiliate-disclosure">Affiliate Disclosure</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="container">
+        <strong>Affiliate Disclosure:</strong> This site contains affiliate links. If you click and make a purchase, I may earn a small commission at no extra cost to you. I only recommend products and services I personally use and trust. Thank you for supporting this site!
+      </p>
+      <p class="container footer-copy">&copy; <span id="year"></span> TherynTravel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
